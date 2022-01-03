@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 27, 2021 10:35:20 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="spring.mvc.Employee" table="employee" catalog="springpractice" optimistic-lock="version">
+        <id name="empId" type="int">
+            <column name="empID" />
+            <generator class="assigned" />
+        </id>
+        <property name="empName" type="string">
+            <column name="empName" length="45" />
+        </property>
+        <property name="designation" type="string">
+            <column name="designation" length="45" />
+        </property>
+        <property name="salary" type="string">
+            <column name="Salary" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
